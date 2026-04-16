@@ -1,0 +1,1 @@
+-- SQL definition for dim_sku

@@ -1,0 +1,4 @@
+activation_date,weekly_drop_id,sku_id,source_location_id,target_country_code,candidate_units,stock_risk_score_v2,market_opportunity_score_v2,landed_cost_v2,recommended_price_v2,avg_market_price,expected_margin_pct,expected_margin_value,activation_score_v2,activation_priority,decision_reason
+2026-04-20,WD_2026_16,SKU_003,LOC_003,CA,14,79.17,89.29,249.2,356.0,378,0.3,106.8,66.36,medium,approved_for_weekly_drop
+2026-04-20,WD_2026_16,SKU_004,LOC_002,CA,15,69.85,63.7,139.85,184.01,189,0.24,44.16,53.04,medium,approved_for_weekly_drop
+2026-04-20,WD_2026_16,SKU_004,LOC_002,BX,20,69.85,55.07,111.45,146.64,174,0.24,35.19,50.52,medium,approved_for_weekly_drop

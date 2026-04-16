@@ -1,0 +1,8 @@
+sku_id,source_location_id,target_country_code,pricing_status,market_tier,stock_status,activation_score_v2,decision_reason
+SKU_002,LOC_003,CA,price_above_market,high_priority,activate_candidate,57.8,price_not_supported_by_market
+SKU_001,LOC_001,BX,market_supports_price,medium_priority,activate_candidate,55.04,market_opportunity_too_low
+SKU_001,LOC_003,CA,price_above_market,medium_priority,activate_candidate,50.09,price_not_supported_by_market
+SKU_003,LOC_001,BX,market_supports_price,high_priority,hold_local,48.85,stock_not_eligible
+SKU_002,LOC_001,IT,market_supports_price,medium_priority,hold_local,46.48,stock_not_eligible
+SKU_005,LOC_001,BX,market_supports_price,low_priority,activate_candidate,43.82,market_opportunity_too_low
+SKU_005,LOC_004,CA,price_above_market,medium_priority,hold_local,43.64,stock_not_eligible

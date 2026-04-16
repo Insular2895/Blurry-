@@ -1,0 +1,11 @@
+scenario_id,sku_id,target_country_code,fx_shock_pct,shipping_shock_pct,demand_shock_pct,margin_after_scenario
+BASE,SKU_001,BX,0.0,0.0,0.0,0.22
+WORST,SKU_001,BX,0.05,0.1,-0.1,0.12
+BASE,SKU_002,CA,0.0,0.0,0.0,0.28
+WORST,SKU_002,CA,0.06,0.12,-0.12,0.15
+BASE,SKU_003,CA,0.0,0.0,0.0,0.3
+WORST,SKU_003,CA,0.06,0.1,-0.15,0.16
+BASE,SKU_004,BX,0.0,0.0,0.0,0.24
+WORST,SKU_004,BX,0.04,0.08,-0.1,0.14
+BASE,SKU_005,CA,0.0,0.0,0.0,0.24
+WORST,SKU_005,CA,0.05,0.09,-0.11,0.13

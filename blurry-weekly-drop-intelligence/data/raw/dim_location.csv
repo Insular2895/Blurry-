@@ -1,0 +1,6 @@
+location_id,location_name,country_code,region,partner_type
+LOC_001,Paris Boutique,FR,Europe,partner_store
+LOC_002,Amsterdam Boutique,NL,Europe,partner_store
+LOC_003,Milan Boutique,IT,Europe,partner_store
+LOC_004,Madrid Boutique,ES,Europe,partner_store
+LOC_005,Toronto Boutique,CA,North America,partner_store

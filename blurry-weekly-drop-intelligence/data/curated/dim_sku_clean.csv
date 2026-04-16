@@ -1,0 +1,6 @@
+sku_id,brand,model_name,category,profile_type,buy_price_eur,target_margin_pct
+SKU_001,adidas,Yeezy Slide,sneakers,fast_mover,70.0,0.22
+SKU_002,adidas,Yeezy 700,sneakers,premium_bulk,180.0,0.28
+SKU_003,Jordan,Jordan 4,sneakers,high_demand,190.0,0.3
+SKU_004,ASICS,Gel-NYC,sneakers,trend_driven,95.0,0.24
+SKU_005,New Balance,1906R,sneakers,stable,110.0,0.24

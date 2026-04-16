@@ -1,0 +1,1 @@
+-- SQL definition for fact_stock_health

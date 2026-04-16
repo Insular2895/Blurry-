@@ -1,0 +1,9 @@
+currency_code,fx_rate_to_eur,fx_buffer_pct
+EUR,1.0,0.01
+CAD,1.47,0.03
+USD,1.1,0.02
+GBP,0.85,0.02
+JPY,130.0,0.05
+AUD,1.6,0.03
+CHF,1.08,0.02
+CNY,7.0,0.04

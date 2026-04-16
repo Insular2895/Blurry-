@@ -1,0 +1,6 @@
+market_id,target_country_code,market_name,currency_code,market_priority
+MKT_001,FR,France,EUR,5
+MKT_002,BX,Benelux,EUR,4
+MKT_003,IT,Italy,EUR,4
+MKT_004,ES,Spain,EUR,4
+MKT_005,CA,Canada,CAD,3
