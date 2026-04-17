@@ -49,17 +49,17 @@ L'objectif est de détecter les stocks qui stagnent localement, d'identifier les
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│  Le stock n'est pas déplacé en continu                       │
-│  ↓                                                            │
-│  Il reste dans sa boutique d'origine tant qu'aucune          │
-│  activation n'est décidée                                    │
-│  ↓                                                            │
+│  Le stock n'est pas déplacé en continu                      │
+│  ↓                                                          │
+│  Il reste dans sa boutique d'origine tant qu'aucune         │
+│  activation n'est décidée                                   │
+│  ↓                                                          │
 │  Le mouvement n'a lieu que lorsqu'un produit est            │
 │  sélectionné dans le cadre d'une opération de vente         │
-│  ponctuelle                                                  │
-│  ↓                                                            │
+│  ponctuelle                                                 │
+│  ↓                                                          │
 │  Ce mécanisme constitue l'unique levier d'activation        │
-│  inter-boutiques                                             │
+│  inter-boutiques                                            │
 └─────────────────────────────────────────────────────────────┘
 ```
 
@@ -731,14 +731,14 @@ Ce projet montre la capacité à :
 ```
 ┌──────────────────────────────────────────────────────────────────────┐
 │                                                                      │
-│  Ce projet simule un système d'aide à la décision pour une société  │
+│  Ce projet simule un système d'aide à la décision pour une société   │
 │  travaillant avec plusieurs boutiques partenaires afin de:           │
 │                                                                      │
 │  ✅ Identifier les stocks dormants                                   │
 │  ✅ Décider des actions de stock rebalancing les plus pertinentes    │
-│  ✅ Sélectionner les marchés cibles les plus intéressants           │
-│  ✅ Calculer un coût complet réaliste incluant le dernier kilomètre │
-│  ✅ Tester la robustesse de ces décisions sous différents scénarios │
+│  ✅ Sélectionner les marchés cibles les plus intéressants            │
+│  ✅ Calculer un coût complet réaliste incluant le dernier kilomètre  │
+│  ✅ Tester la robustesse de ces décisions sous différents scénarios  │
 │                                                                      │
 └──────────────────────────────────────────────────────────────────────┘
 ```
@@ -750,7 +750,5 @@ Ce projet montre la capacité à :
 <div align="center">
 
 **[⬆ Retour en haut](#-blurry--système-décisionnel-de-revente-internationale)**
-
-Made with 💙 by [Your Name]
 
 </div>
