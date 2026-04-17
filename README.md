@@ -120,9 +120,6 @@ blurry-weekly-drop-intelligence/
 ├── 📄 README.md
 ├── 📄 requirements.txt
 │
-├── 🎨 assets/
-│   └── logo.svg
-│
 ├── 💾 data/
 │   │
 │   ├── 📂 raw/
@@ -656,13 +653,13 @@ Le projet gagnera en crédibilité si les dashboards racontent clairement le pro
 
 ```yaml
 APIs:
-  - 💰 API prix marché
-  - 💱 API taux de change
-  - 🚚 API transporteurs
+  - 💰 API prix marché ( Via l'API stock X ) 
+  - 💱 API taux de change ( FX rates API ) 
+  - 🚚 API transporteurs ( UPS campus par ex ) 
   
 Signaux:
-  - 📊 Signaux boutiques partenaires
-  - 👥 Données de votes ou d'intérêt clients
+  - 📊 Signaux boutiques partenaires ( Produits qui dorment le plus en raison de leur valeur/demande ) 
+  - 👥 Données de votes ou d'intérêt clients ( Via questionnaire de raffle ) 
   
 Raffinements:
   - 🛃 Hypothèses douanières plus fines
