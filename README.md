@@ -8,7 +8,7 @@
 [![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](LICENSE)
 [![Status](https://img.shields.io/badge/Status-Portfolio_Project-blue?style=for-the-badge)](https://github.com/Insular2895/Blurry-)
  
-[Installation](#-installation) • [Utilisation](#-utilisation) • [Pipeline](#-pipeline-analytique) • [Architecture](#-architecture) • [Dashboards](#-dashboards) • [Évolutions](#-évolutions-possibles)
+[Installation](#️-installation) • [Utilisation](#-utilisation) • [Pipeline](#-pipeline-analytique) • [Architecture](#️-architecture) • [Dashboards](#-dashboards) • [Évolutions](#-évolutions-possibles)
  
 </div>
 ---
