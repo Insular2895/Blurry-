@@ -455,17 +455,63 @@ Robustesse:
 
 ---
 
-## 📊 Dashboards recommandés
+## 📊 Dashboard
 
-Le projet gagnera en crédibilité si les dashboards racontent clairement le problème métier. Le but n'est pas d'accumuler des graphiques, mais de rendre visibles les arbitrages de stock rebalancing.
+Les dashboards ne doivent pas être compris comme une simple couche visuelle ajoutée à la fin du projet.  
+Ils servent à rendre lisible la logique métier du système décisionnel et à montrer comment les données soutiennent une décision de **stock rebalancing international**.
+
+Dans ce projet, le bon angle n’est pas celui d’une marketplace classique.  
+L’objectif n’est pas de piloter des mouvements de stock permanents entre plusieurs pays, mais d’identifier **quand un stock dormant doit être réalloué**, vers **quel marché**, à **quel niveau de coût complet**, et avec **quel niveau de robustesse économique**. Cette logique doit donc se retrouver directement dans les dashboards.
+
+Autrement dit, les dashboards doivent répondre à une question simple :
+
+> Quels produits faut-il sortir de leur marché local, vers quelle destination, à quel prix, et avec quelle marge attendue une fois intégrés le transport international, la douane, le packaging, le contrôle qualité et le dernier kilomètre ?
+
+Le dernier kilomètre est important dans la lecture des résultats.  
+Même lorsqu’une activation semble rentable au moment de l’expédition internationale, la profitabilité réelle peut encore être dégradée une fois le stock arrivé dans l’entrepôt ou la zone cible, car il faut ensuite financer l’acheminement final vers le point de vente, le point relais ou le client. Les dashboards doivent donc bien faire apparaître que la décision ne repose pas uniquement sur le prix de marché, mais sur un **coût complet réellement exploitable**.
+
+Les pages recommandées ci-dessous ont été pensées pour raconter cette logique de manière progressive :
+1. une vue synthétique des décisions,
+2. une lecture opérationnelle du stock à rééquilibrer,
+3. une lecture marché des destinations les plus pertinentes,
+4. une lecture financière du coût complet et du pricing,
+5. une lecture explicable du moteur de décision,
+6. une lecture de robustesse via les scénarios de stress.
+
+Le pipeline a été conçu de manière reproductible : les mêmes scripts peuvent être réexécutés avec un autre jeu de données structuré selon le même schéma, ce qui permet d’actualiser automatiquement les exports et, par extension, les dashboards. En revanche, les données utilisées ici restent un jeu de données de démonstration construit pour illustrer la logique métier du projet. Les visualisations produites sont donc cohérentes pour une preuve de concept, mais elles ne reflètent pas encore toute la richesse, la granularité ni la complexité d’un environnement réel à grande échelle.
 
 ### 📋 Dashboard 1 — Vue executive
+
+Cette page doit permettre de comprendre en quelques secondes ce que le système recommande pour la prochaine vague d’activation.
+
+Elle doit mettre en avant :
+- le nombre total d’activations étudiées,
+- le nombre d’activations approuvées,
+- le nombre d’activations rejetées,
+- le bénéfice total attendu,
+- la marge moyenne attendue,
+- les meilleures activations validées,
+- les principaux motifs de rejet.
+
+Cette page est utile pour un lecteur non technique, car elle résume immédiatement la sortie du moteur de décision.
 
 <img width="2930" height="1694" alt="image" src="https://github.com/user-attachments/assets/988a4e3c-a2af-492d-98a2-90d9923b3ed5" />
 
 ---
 
 ### 📦 Dashboard 2 — Santé du stock et besoin de rebalancing
+
+Cette page doit expliquer **pourquoi** certains produits deviennent des candidats au rebalancing.
+
+Elle doit montrer :
+- les jours moyens en stock,
+- le taux d’écoulement à 30 jours,
+- le score de risque stock,
+- le statut du stock,
+- le volume dormant par boutique ou localisation,
+- les références les plus sous pression.
+
+Cette page est essentielle car elle montre que la logique de départ vient d’un problème d’immobilisation locale du stock, et non d’une simple opportunité commerciale abstraite.
 
 <img width="2906" height="1690" alt="image" src="https://github.com/user-attachments/assets/52df50a8-2870-498a-8db3-214fe9e3fe90" />
 
@@ -474,6 +520,17 @@ Le projet gagnera en crédibilité si les dashboards racontent clairement le pro
 
 ### 🌍 Dashboard 3 — Opportunité marché
 
+Cette page doit répondre à la question : **où ce stock dormant a-t-il le plus de chances d’être mieux absorbé ?**
+
+Elle doit mettre en avant :
+- le score d’opportunité par produit et par pays,
+- le score de demande,
+- le score de tendance,
+- le niveau de volatilité,
+- le prix moyen observé,
+- le niveau de priorité marché.
+
+Cette page permet de visualiser les destinations les plus crédibles pour un rebalancing sélectif.
 
 <img width="2904" height="1706" alt="image" src="https://github.com/user-attachments/assets/3e563330-6554-45f5-992c-9d825b9ae058" />
 
@@ -482,6 +539,24 @@ Le projet gagnera en crédibilité si les dashboards racontent clairement le pro
 
 ### 💰 Dashboard 4 — Pricing et coût complet
 
+Cette page doit montrer qu’une décision de rebalancing n’a de sens que si le marché cible supporte un prix cohérent avec le coût complet réel.
+
+Elle doit inclure :
+- le prix d’achat,
+- le coût de transport international,
+- le coût de douane,
+- le coût de packaging,
+- le coût de contrôle qualité,
+- le buffer FX,
+- le coût du dernier kilomètre,
+- le coût complet total,
+- le prix recommandé,
+- le prix moyen observé sur le marché,
+- l’écart entre prix recommandé et prix de marché,
+- le statut pricing.
+
+C’est l’une des pages les plus importantes du rapport, car elle montre que la décision finale ne repose pas sur un simple arbitrage prix de vente / prix d’achat, mais sur une lecture réaliste de la rentabilité après tous les coûts opérationnels.
+
 <img width="2894" height="1450" alt="image" src="https://github.com/user-attachments/assets/c2fc025b-3eda-4d43-bbf2-17f93c4e7a4f" />
 
 
@@ -489,12 +564,27 @@ Le projet gagnera en crédibilité si les dashboards racontent clairement le pro
 
 ### ✅ Dashboard 5 — Activation decision engine
 
+Cette page doit rendre visible la logique finale d’approbation ou de rejet.
+
+Elle doit faire apparaître :
+- le score de risque stock,
+- le score d’opportunité marché,
+- la marge attendue,
+- les unités candidates,
+- le score final d’activation,
+- la décision approuver / rejeter,
+- la raison de décision.
+
+Cette page permet de transformer le pipeline en système explicable.  
+Elle montre qu’une activation n’est pas validée parce qu’un produit “semble intéressant”, mais parce qu’il passe une série de critères cohérents et auditables.
 
 <img width="2902" height="1682" alt="image" src="https://github.com/user-attachments/assets/4f0e26af-1617-441e-a4e7-a20a6d1544eb" />
 
 <img width="2918" height="1514" alt="image" src="https://github.com/user-attachments/assets/058917fd-f4c2-4944-ba5a-2e02c8177211" />
 
 <img width="2930" height="1478" alt="image" src="https://github.com/user-attachments/assets/9f34dfbe-45f3-4f9a-8734-1c44b375b02f" />
+
+Cette page est utile pour montrer qu’une recommandation n’est pas seulement rentable “sur le papier” dans un cas central, mais qu’elle conserve un intérêt même sous stress de demande, de change ou de logistique.
 
 
 ## 🔮 Évolutions possibles
