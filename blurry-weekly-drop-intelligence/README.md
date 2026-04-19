@@ -35,7 +35,22 @@
  
 Ce projet simule un système d'aide à la décision pour une société travaillant avec plusieurs boutiques partenaires afin d'éviter que certains produits restent durablement invendus dans leur zone locale.
  
-> **Note importante** : Le bon angle de lecture est celui d'un système de **stock rebalancing international**, et non d'une marketplace classique ou d'un simple outil de pricing.
+> **Note importante** :
+
+Ce projet s'inspire d'une expérience concrète menée au sein de Blurry, 
+où j'ai travaillé sur la conception et la structuration d'un système 
+similaire pour optimiser la distribution de stocks entre plusieurs 
+marchés internationaux.
+
+Le projet présenté ici est une **modélisation analytique** de cette 
+problématique métier, transposée dans un cadre portfolio avec des 
+données synthétiques. Il reflète la logique décisionnelle, les 
+contraintes opérationnelles et l'approche data que j'ai développées 
+dans ce contexte réel.
+
+**Objectif du portfolio** : Démontrer ma capacité à transformer un 
+problème business complexe en système d'aide à la décision exploitable, 
+reproductible et documenté.
  
 ### 🎯 Objectifs clés
  
