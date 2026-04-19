@@ -461,191 +461,41 @@ Le projet gagnera en crédibilité si les dashboards racontent clairement le pro
 
 ### 📋 Dashboard 1 — Vue executive
 
-**Objectif :** Montrer en quelques secondes ce que le système recommande.
-
-<details>
-<summary><b>🔍 Contenu détaillé</b></summary>
-
-**À mettre :**
-
-- 📊 Nombre total d'activations étudiées
-- ✅ Nombre d'activations approuvées
-- ❌ Nombre d'activations rejetées
-- 💰 Profit attendu total
-- 📈 Marge unitaire moyenne
-- 🏆 Top 5 activations recommandées
-- ⚠️ Top motifs de rejet
-
-**Visuels conseillés :**
-
-```
-📌 Cartes KPI
-📊 Tableau trié des activations approuvées
-📊 Bar chart approuvé vs rejeté
-📊 Bar chart des raisons de rejet
-```
-</details>
+<img width="2930" height="1694" alt="image" src="https://github.com/user-attachments/assets/988a4e3c-a2af-492d-98a2-90d9923b3ed5" />
 
 ---
 
 ### 📦 Dashboard 2 — Santé du stock et besoin de rebalancing
 
-**Objectif :** Expliquer pourquoi certains produits doivent être sortis de leur marché local.
+<img width="2906" height="1690" alt="image" src="https://github.com/user-attachments/assets/52df50a8-2870-498a-8db3-214fe9e3fe90" />
 
-<details>
-<summary><b>🔍 Contenu détaillé</b></summary>
-
-**À mettre :**
-
-- 📅 Jours moyens en stock par SKU et par boutique
-- 📈 Sell-through rate 30 jours
-- ⚠️ Score de risque stock
-- 🔄 Statut du stock
-- 📦 Volume dormant par boutique
-- 🏆 Top références sous pression
-
-**Visuels conseillés :**
-
-```
-📊 Scatter plot: days_in_stock_avg vs sell_through_rate_30d
-🔥 Heatmap: SKU × location
-📊 Ranking des stocks à risque
-📋 Tableau détaillé des candidats d'activation
-```
-</details>
 
 ---
 
 ### 🌍 Dashboard 3 — Opportunité marché
 
-**Objectif :** Montrer où le stock dormant a le plus de chances d'être réalloué intelligemment.
 
-<details>
-<summary><b>🔍 Contenu détaillé</b></summary>
+<img width="2904" height="1706" alt="image" src="https://github.com/user-attachments/assets/3e563330-6554-45f5-992c-9d825b9ae058" />
 
-**À mettre :**
-
-- 🎯 Score d'opportunité par produit et par pays
-- 📊 Score de demande
-- 📈 Score de tendance
-- 📉 Volatilité
-- 💰 Prix moyen observé
-- ⭐ Niveau de priorité marché
-
-**Visuels conseillés :**
-
-```
-🔥 Heatmap: SKU × pays
-📊 Scatter plot: demand_score vs volatility_score
-📊 Bar chart des meilleurs couples produit / marché
-📋 Tableau de ranking marché
-```
-</details>
 
 ---
 
 ### 💰 Dashboard 4 — Pricing et coût complet
 
-**Objectif :** Montrer que la décision dépend du coût complet réel, pas seulement du prix de vente potentiel.
+<img width="2894" height="1450" alt="image" src="https://github.com/user-attachments/assets/c2fc025b-3eda-4d43-bbf2-17f93c4e7a4f" />
 
-<details>
-<summary><b>🔍 Contenu détaillé</b></summary>
-
-**À mettre :**
-
-- 💵 Prix d'achat
-- 🚚 Coût transport international
-- 🛃 Coût douane
-- 📦 Coût packaging / QC
-- 🚗 Coût dernier kilomètre
-- 💱 Buffer FX
-- 💰 Coût complet
-- 💸 Prix recommandé
-- 📊 Prix moyen de marché
-- ⚖️ Gap prix recommandé vs prix marché
-
-**Visuels conseillés :**
-
-```
-📊 Waterfall chart du coût complet
-📊 Bar chart: coût complet vs prix recommandé vs prix marché
-📋 Tableau des statuts pricing
-📊 Analyse du poids du dernier kilomètre par destination
-```
-</details>
 
 ---
 
 ### ✅ Dashboard 5 — Activation decision engine
 
-**Objectif :** Rendre visible la logique de décision finale.
 
-<details>
-<summary><b>🔍 Contenu détaillé</b></summary>
+<img width="2902" height="1682" alt="image" src="https://github.com/user-attachments/assets/4f0e26af-1617-441e-a4e7-a20a6d1544eb" />
 
-**À mettre :**
+<img width="2918" height="1514" alt="image" src="https://github.com/user-attachments/assets/058917fd-f4c2-4944-ba5a-2e02c8177211" />
 
-- ⚠️ Score de risque stock
-- 🎯 Score d'opportunité marché
-- 📈 Marge attendue
-- 📦 Unités candidates
-- 🎯 Score d'activation final
-- ✅/❌ Décision approve / reject
-- 💬 Raison de décision
+<img width="2930" height="1478" alt="image" src="https://github.com/user-attachments/assets/9f34dfbe-45f3-4f9a-8734-1c44b375b02f" />
 
-**Visuels conseillés :**
-
-```
-📊 Scatter plot: stock_risk_score_v2 vs market_opportunity_score_v2
-📋 Tableau des décisions avec filtres
-📊 Histogramme des scores d'activation
-📊 Breakdown des raisons de rejet
-```
-</details>
-
----
-
-### ⚠️ Dashboard 6 — Analyse de scénarios
-
-**Objectif :** Montrer si les recommandations restent robustes lorsque les hypothèses se dégradent.
-
-<details>
-<summary><b>🔍 Contenu détaillé</b></summary>
-
-**À mettre :**
-
-- 💰 Profit total par scénario
-- 📈 Marge unitaire moyenne par scénario
-- ✅ Activations profitables par scénario
-- 📉 Variation du coût complet
-- 📊 Variation du volume vendable
-- 🏆 Activations les plus résilientes
-
-**Visuels conseillés :**
-
-```
-📊 Bar chart: profit total par scénario
-📊 Bar chart: marge moyenne par scénario
-📋 Tableau comparatif des activations par scénario
-📈 Slope chart ou variation simple base vs stress
-```
-</details>
-
----
-
-## ⚠️ Scénarios de stress
-
-| Scénario | Hypothèse principale | Icône |
-|----------|---------------------|-------|
-| `base` | Conditions normales | ✅ |
-| `stress_fx` | Dégradation du change | 💱 |
-| `stress_shipping` | Hausse des coûts logistiques | 🚚 |
-| `stress_demand` | Baisse du volume vendable | 📉 |
-| `combined_worst` | Combinaison des chocs défavorables | ⚠️ |
-
-> **Note :** L'objectif n'est pas de faire de la prévision financière avancée mais de montrer la robustesse des arbitrages retenus.
-
----
 
 ## 🔮 Évolutions possibles
 
