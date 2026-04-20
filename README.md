@@ -472,7 +472,15 @@ Rend visible la logique finale d'approbation ou de rejet.
 <img width="1200" alt="Dashboard Decision 2" src="https://github.com/user-attachments/assets/058917fd-f4c2-4944-ba5a-2e02c8177211" />
 <img width="1200" alt="Dashboard Decision 3" src="https://github.com/user-attachments/assets/9f34dfbe-45f3-4f9a-8734-1c44b375b02f" />
 ---
- 
+
+ Exemples de décisions produites par le modèle :
+
+- Le SKU_003 doit être activé depuis LOC_003 vers le Canada : 11 unités vendables, 106.80 € de marge unitaire, 1 174.80 € de profit attendu.
+- Le SKU_004 doit être activé depuis LOC_002 vers BX : 16 unités vendables, 35.19 € de marge unitaire, 563.04 € de profit attendu.
+- Le SKU_004 doit être activé depuis LOC_002 vers le Canada : 12 unités vendables, 44.16 € de marge unitaire, 529.92 € de profit attendu.
+
+À l’inverse, certaines activations sont rejetées, comme le SKU_002 vers le Canada, car le prix requis dépasse le niveau supporté par le marché cible. 
+
 ## 🔮 Évolutions possibles
  
 ### 🌐 Données externes
