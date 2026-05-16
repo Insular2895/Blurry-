@@ -1,0 +1,25 @@
+<svg width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Blurry animated logo</title>
+  <desc id="desc">Animated focus and market signal mark for Blurry.</desc>
+  <defs>
+    <filter id="soft-blur">
+      <feGaussianBlur stdDeviation="3">
+        <animate attributeName="stdDeviation" values="3;0.8;3" dur="2.4s" repeatCount="indefinite"/>
+      </feGaussianBlur>
+    </filter>
+  </defs>
+  <rect width="160" height="160" rx="34" fill="#10131A"/>
+  <rect x="28" y="40" width="104" height="76" rx="14" fill="#172033" stroke="#475569" stroke-width="4"/>
+  <g filter="url(#soft-blur)">
+    <circle cx="62" cy="78" r="20" fill="#38BDF8"/>
+    <rect x="82" y="60" width="26" height="36" rx="8" fill="#FACC15"/>
+  </g>
+  <path d="M40 112c20-29 37-22 51-10 13 11 22 12 33-3" stroke="#22C55E" stroke-width="6" stroke-linecap="round"/>
+  <rect x="45" y="50" width="70" height="56" rx="10" stroke="#E2E8F0" stroke-width="4">
+    <animate attributeName="x" values="45;54;45" dur="2.4s" repeatCount="indefinite"/>
+    <animate attributeName="width" values="70;52;70" dur="2.4s" repeatCount="indefinite"/>
+  </rect>
+  <circle cx="120" cy="38" r="6" fill="#F97316">
+    <animate attributeName="opacity" values="0.35;1;0.35" dur="1.3s" repeatCount="indefinite"/>
+  </circle>
+</svg>

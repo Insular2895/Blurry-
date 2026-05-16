@@ -1,5 +1,8 @@
 <div align="center">
-# 🌐 Blurry — Système décisionnel de revente internationale
+
+<img src="docs/assets/blurry-animated.svg" alt="Blurry animated logo" width="112" />
+
+# Blurry — Système décisionnel de revente internationale
  
 ### Système d'aide à la décision pour le stock rebalancing international et l'activation ponctuelle de stocks dormants
  
@@ -11,6 +14,7 @@
 [Installation](#️-installation) • [Utilisation](#-utilisation) • [Pipeline](#-pipeline-analytique) • [Architecture](#️-architecture) • [Dashboards](#-dashboards) • [Évolutions](#-évolutions-possibles)
  
 </div>
+
 ---
  
 ## 📑 Sommaire
